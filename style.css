@@ -1,0 +1,37 @@
+body {
+				display : flex ;
+				justify-content : center ;
+				align-items : center ;
+}
+.main{
+				width : 80%;
+				margin: auto;
+				padding: 20px;
+				position: fixed ;
+				top: 10%;
+				left: 10%;
+				border :1px solid black ;
+				text-align : center ;
+				box-sizing : border-box;
+}
+
+p{
+				font-weight : bold;
+}
+input{
+				width: 60%;
+				height: 40px ;
+}
+
+.feedback{
+				display : none;
+}
+.feedback p{
+				color: red;
+}
+.showItem{
+				display : block;
+}
+.resultDom{
+				display : none ;
+}
