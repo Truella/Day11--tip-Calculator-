@@ -561,11 +561,11 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingScreen.className = 'loading-screen';
     loadingScreen.innerHTML = `
         <div class="loading-content">
-            <div class="loading-logo">NEXUS</div>
+            <div class="loading-logo">YPIT</div>
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
-            <div class="loading-text">INITIALIZING EXPERIENCE</div>
+            <div class="loading-text">CONNECTING COMMUNITY</div>
         </div>
     `;
     document.body.appendChild(loadingScreen);
@@ -629,5 +629,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     }, 2500);
     
-    console.log('🚀 NEXUS Digital Festival Experience Initialized');
+    console.log('🚀 YPIT Community Platform Initialized');
 });
