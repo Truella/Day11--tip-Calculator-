@@ -1,37 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-				<title>Tip calculator</title>
-				<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS • Digital Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-				<div class="main">
-								<h1>Tip Calculator</h1>
-				<form>
-								<div class="feedback">
-												
-								</div>
-								<div class="form-container">
-								<p>How much was your bill? </p>
-								<label for="bill-input">$</label>
-								<input type="number" id="bill-input" required>
-								<p>How many people sharing the bill? </p>
-								<label for="number-of-customers">p</label>
-								<input type="number" id="number-of-customers">
-								<p>How was our service?? </p>
-								<select id="select">
-												<option selected value="0">Select... </option>
-												
-								</select><br><br>
-								<input type="button" id="calc-tip" value="Calculate">
-				</div> 
-				</form>
-			<div class="resultDom">
-								<h3><span id="Tip-amount"></span></h3>
-				<h3><span id="Total-amount"></span></h3>
-				<h3><span id="price-per-person"></span></h3> 
-				</div>
-			</div>
-<script src="app.js"	></script>
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-logo">NEXUS</div>
+        <div class="nav-menu">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#experience" class="nav-link">EXPERIENCE</a>
+            <a href="#community" class="nav-link">COMMUNITY</a>
+            <a href="#connect" class="nav-link">CONNECT</a>
+        </div>
+    </nav>
+
+    <main class="scroll-container">
+        <!-- Hero Section -->
+        <section class="section hero-section" id="home">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="floating-particles"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">DIGITAL</span>
+                        <span class="title-line">RENAISSANCE</span>
+                        <span class="title-line neon-text">2024</span>
+                    </h1>
+                    <p class="hero-subtitle">Where creativity meets technology in an immersive festival experience</p>
+                    <div class="hero-cta">
+                        <button class="cta-button primary">
+                            <span>ENTER THE NEXUS</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="split-container">
+                <div class="split-left">
+                    <div class="section-number">01</div>
+                    <h2 class="section-title">
+                        <span class="title-word">IMMERSIVE</span>
+                        <span class="title-word">EXPERIENCES</span>
+                    </h2>
+                    <p class="section-description">
+                        Step into a world where digital artistry transcends boundaries. 
+                        Our curated experiences blend cutting-edge technology with 
+                        human creativity to create unforgettable moments.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Interactive Installations</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Virtual Reality Showcases</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>AI-Powered Art</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="visual-element">
+                        <div class="floating-cube"></div>
+                        <div class="neon-frame"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section community-section" id="community">
+            <div class="split-container reverse">
+                <div class="split-left">
+                    <div class="visual-element">
+                        <div class="network-visualization">
+                            <div class="network-node"></div>
+                            <div class="network-node"></div>
+                            <div class="network-node"></div>
+                            <div class="network-connection"></div>
+                            <div class="network-connection"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="section-number">02</div>
+                    <h2 class="section-title">
+                        <span class="title-word">CREATIVE</span>
+                        <span class="title-word">COMMUNITY</span>
+                    </h2>
+                    <p class="section-description">
+                        Join a global network of artists, developers, and visionaries. 
+                        Collaborate, learn, and push the boundaries of what's possible 
+                        in the digital realm.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Artists</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Connected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Section -->
+        <section class="section innovation-section">
+            <div class="full-width-content">
+                <div class="section-header">
+                    <div class="section-number">03</div>
+                    <h2 class="section-title centered">
+                        <span class="title-word">INNOVATION</span>
+                        <span class="title-word neon-text">UNLEASHED</span>
+                    </h2>
+                </div>
+                <div class="innovation-grid">
+                    <div class="innovation-card">
+                        <div class="card-glow"></div>
+                        <h3>AI COLLABORATION</h3>
+                        <p>Partner with artificial intelligence to create unprecedented artistic expressions</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="card-glow"></div>
+                        <h3>BLOCKCHAIN ART</h3>
+                        <p>Explore the intersection of digital ownership and creative authenticity</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="card-glow"></div>
+                        <h3>METAVERSE SPACES</h3>
+                        <p>Build and inhabit virtual worlds that challenge reality's limitations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="section connect-section" id="connect">
+            <div class="connect-content">
+                <div class="section-number">04</div>
+                <h2 class="section-title">
+                    <span class="title-word">READY TO</span>
+                    <span class="title-word neon-text">CONNECT?</span>
+                </h2>
+                <p class="connect-description">
+                    The future of creativity awaits. Join us in shaping tomorrow's digital landscape.
+                </p>
+                <div class="connect-actions">
+                    <button class="cta-button primary">
+                        <span>JOIN THE COMMUNITY</span>
+                        <div class="button-glow"></div>
+                    </button>
+                    <button class="cta-button secondary">
+                        <span>EXPLORE EVENTS</span>
+                    </button>
+                </div>
+                <div class="connect-info">
+                    <div class="info-item">
+                        <span class="info-label">NEXT EVENT</span>
+                        <span class="info-value">DEC 15-17, 2024</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">LOCATION</span>
+                        <span class="info-value">GLOBAL • VIRTUAL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
